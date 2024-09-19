@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content</title>
+
+    <style>
+      /* justify-content, work like you may have used in MS Word. axis depends on flex-direction.
+        values: flex-start, flex-end, center, space-between, space-around, space-evenly */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        border: 5px solid lightsalmon;
+        display: flex;
+        flex-flow: row wrap; /* flex-dreiction and flex-wrap together -- so its just short notation */
+
+        justify-content: space-between;
+      }
+
+      .container div {
+        width: 200px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .child1 {
+        background-color: lightseagreen;
+      }
+
+      .child2 {
+        background-color: limegreen;
+      }
+
+      .child3 {
+        background-color: mediumvioletred;
+      }
+
+      .child4 {
+        background-color: palevioletred;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="child1">Child 1</div>
+      <div class="child2">Child 2</div>
+      <div class="child3">Child 3</div>
+      <div class="child4">Child 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+    <style>
+      /* what amount of the available space inside the flex container the item should take up. */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 5px solid lightsalmon;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .container div {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .child1 {
+        background-color: lightseagreen;
+        flex-grow: 1;
+      }
+      .child2 {
+        background-color: limegreen;
+        flex-grow: 2;
+      }
+      .child3 {
+        background-color: mediumvioletred;
+        flex-grow: 1;
+      }
+      .child4 {
+        background-color: palevioletred;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">Child 1</div>
+      <div class="child2">Child 2</div>
+      <div class="child3">Child 3</div>
+      <div class="child4">Child 4</div>
+    </div>
+  </body>
+</html>

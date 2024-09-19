@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-shrink - default value 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 5px solid lightsalmon;
+        display: flex;
+        /* flex-flow: row wrap;     */
+        /* justify-content: space-around; */
+        width: 1000px;
+      }
+
+      .container div {
+        text-align: center;
+        padding: 20px;
+        /* width:500px; */
+        flex-basis: 400px;
+      }
+
+      .child1 {
+        background-color: lightseagreen;
+        /* flex-shrink: 1; */
+      }
+      .child2 {
+        background-color: limegreen;
+        /* flex-shrink: 2; */
+      }
+      .child3 {
+        background-color: mediumvioletred;
+        /* flex-shrink: 1; */
+      }
+      .child4 {
+        background-color: palevioletred;
+        /* flex-shrink: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">Child 1</div>
+      <div class="child2">Child 2</div>
+      <div class="child3">Child 3</div>
+      <div class="child4">Child 4</div>
+    </div>
+  </body>
+</html>
